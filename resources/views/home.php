@@ -7,24 +7,26 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    </script>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.dropotron.min.js"></script>
-    <script src="../js/skel.min.js"></script>
-    <script src="../js/skel-layers.min.js"></script>
-    <script src="../js/init.js"></script><noscript>
-        <link rel="stylesheet" href="skel.css<">
-        <link rel="stylesheet" href="../resources/css/style.css">
-    </noscript>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+
+
+   <link rel="stylesheet" href="..\resources\css\skel.css">
+<link rel="stylesheet" href="..\resources\css\style.css">
+
+
 </head>
 
 <body class="homepage">
-
+    <!-- Header -->
     <div id="header">
         <div class="container">
 
             <!-- Logo -->
-            <img src="images/logo.jpeg" class="perfilf">
+            <img src="..\resources\images\logo.jpeg" class="perfilf">
             <h1><a href="#" id="logo">AMARANT</a></h1>
             <h3>"Tradición y calidad a tu paladar"</h3>
             <!-- Nav -->
