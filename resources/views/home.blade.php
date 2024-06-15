@@ -1,17 +1,18 @@
+@extends('layouts.plantilla')
+
 <!DOCTYPE HTML>
 <html>
-
 <head>
-    <title>Inicio</title>
+    @section('titulo','Inicio')
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
+    <script src="..\resources\js\jquery.min.js"></script>
+    <script src="..\resources\js\jquery.dropotron.min.js"></script>
+    <script src="..\resources\js\skel.min.js"></script>
+    <script src="..\resources\js\skel-layers.min.js"></script>
+    <script src="..\resources\js\init.js"></script>
 
 
    <link rel="stylesheet" href="..\resources\css\skel.css">
@@ -21,6 +22,7 @@
 </head>
 
 <body class="homepage">
+
     <!-- Header -->
     <div id="header">
         <div class="container">
@@ -79,7 +81,7 @@
                                 palanqueta.
                                 Las técnicas y procedimientos para la elaboración de este dulce tradicional se
                                 perfeccionaron con el tiempo a través de tres generaciones. </span>
-                        </header><a href="inicio.html" class="button alt">Inicia Sesion</a>
+                        </header><a href="{{route('inicio_sesion.sesion')}}" class="button alt">Inicia Sesion</a>
                 </div>
                 </section>
             </div>
@@ -98,7 +100,7 @@
             <div class="row no-collapse-1">
 
 
-                <section class="4u"><a href="#" class="image feature"><img src="images/Pepitap.png" alt="" width="368"
+                <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\Pepitap.png" alt="" width="368"
                             height="180"></a>
                     <p>Palanquetas con pepita 24pz</p>
                     <p>Ingredientes: Cacahuate, semilla de calabaza (pepita), ajonjolí, amaranto, azúcar de caña y miel
@@ -106,14 +108,14 @@
 
 
                 </section>
-                <section class="4u"><a href="#" class="image feature"><img src="images/Almendrap.png" alt="" width="368"
+                <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\Almendrap.png" alt="" width="368"
                             height="180"></a>
                     <p>Palanquetas con almendra 24pz</p>
                     <p>Ingredientes: Almendra, Cacahuate, Ajonjolí, Amaranto, Azúcar de caña y Glucosa de maíz.</p>
 
 
                 </section>
-                <section class="4u"><a href="#" class="image feature"><img src="images/Nuezp.png" alt="" width="368"
+                <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\Nuezp.png" alt="" width="368"
                             height="180"></a>
                     <p>Palanquetas con nuez 24pz</p>
                     <p>Ingredientes: Nuez, ajonjolí, amaranto, azúcar de caña y miel de maíz.</p>
@@ -128,21 +130,21 @@
                 <header class="major">
                 </header>
                 <div class="row no-collapse-1">
-                    <section class="4u"><a href="#" class="image feature"><img src="images/cacahuate.png" alt=""
+                    <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\cacahuate.png" alt=""
                                 width="368" height="180"></a>
                         <p>Palanquetas con cacahuate 24pz</p>
                         <p>Ingredientes: Cacahuate, azúcar de caña y miel de maíz.</p>
 
 
                     </section>
-                    <section class="4u"><a href="#" class="image feature"><img src="images/Almendrap.png" alt=""
+                    <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\Almendrap.png" alt=""
                                 width="368" height="180"></a>
                         <p>Palanquetas con almendra</p>
                         <p>Ingredientes: Almendra, Cacahuate, Ajonjolí, Amaranto, Azúcar de caña y Glucosa de maíz.</p>
 
 
                     </section>
-                    <section class="4u"><a href="#" class="image feature"><img src="images/Nuezp.png" alt="" width="368"
+                    <section class="4u"><a href="#" class="image feature"><img src="..\resources\images\Nuezp.png" alt="" width="368"
                                 height="180"></a>
                         <p>Palanquetas con nuez</p>
                         <p>Ingredientes: Nuez, ajonjolí, amaranto, azúcar de caña y miel de maíz.</p>

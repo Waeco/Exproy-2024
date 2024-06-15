@@ -1,3 +1,4 @@
+@extends('layouts.plantilla')
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,37 +6,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andev web - Validar formulario</title>
-    <link rel="stylesheet" href="..\resources\css\styleinicio.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @section('titulo', 'Inicio de sesion')
+    <link rel="stylesheet" href="..\resources\css\styleinicio.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="form-container register-container">
-            <form>
+            <!----->
+            <form action="{{ url('inicio_sesion.sesion') }}" method="POST">
+                @csrf
                 <h1>Regístrate</h1>
                 <div class="form-control">
-                    <input type="text" id="username" placeholder="Nombre" />
+                    <input type="text" id="username" name="username" placeholder="Nombre" />
                     <small id="username-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="email" id="email" placeholder="Correo electrónico" />
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" />
                     <small id="email-error"></small>
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="password" id="password" placeholder="Contraseña" />
+                    <input type="password" id="password" name="password" placeholder="Contraseña" />
                     <small id="password-error"></small>
                     <span></span>
                 </div>
                 <button type="submit" value="submit">Registrar</button>
             </form>
+
         </div>
 
         <div class="form-container login-container">
-            <form class="form-lg">
+            <form class="form-lg" method="get">
                 <h1>Inicia sesión</h1>
                 <div class="form-control2">
                     <input type="email" class="email-2" placeholder="Correo electrónico" />
@@ -93,6 +99,6 @@
         </div>
     </div>
 </body>
-<script src="js/main.js"></script>
+<script src="..\resources\js\main.js"></script>
 
 </html>
