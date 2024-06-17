@@ -45,7 +45,7 @@ function checkEmail(email) {
 
 email.addEventListener("input", function(){
     if (!checkEmail(email.value)) {
-        emailError.textContent = "*Email is not valid"
+        emailError.textContent = "*El correo no es valido"
     }else {
         emailError.textContent = "";
     }
@@ -102,7 +102,7 @@ form.addEventListener('submit', function (e) {
         // checkLength(username, 3, 15)
         // checkLength(password, 6, 25)
         // checkEmail(email)
-    } 
+    }
 })
 
 // Check Login Error

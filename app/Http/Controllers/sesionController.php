@@ -10,6 +10,6 @@ class sesionController extends Controller
         return view("inicio_sesion.sesion");
     }
     public function store(Request $request){
-       $request->all();
+      return $request->all();
     }
 }
